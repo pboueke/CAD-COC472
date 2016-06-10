@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BLOCKSIZES=(1000 2000 3000 4000 5000 6000 7000 8000)
+BLOCKSIZES=(4 8 16)
 
 cd bin
 g++ -O3 ../matrixBL.cpp -std=c++11 -o matrixBL

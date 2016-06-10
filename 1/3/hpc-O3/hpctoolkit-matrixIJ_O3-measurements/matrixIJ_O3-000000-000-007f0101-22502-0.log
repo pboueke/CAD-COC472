@@ -1,0 +1,917 @@
+WARNING: PAPI_L2_TCM using default threshold 2000000, better to use an explicit threshold.
+WARNING: PAPI_L1_TCM using default threshold 2000000, better to use an explicit threshold.
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7dc2355 (0x13355), load module = /lib/x86_64-linux-gnu/ld-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbdb5 (0x25db5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef67e34e0 (0xd4e0), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7dc2349 (0x13349), load module = /lib/x86_64-linux-gnu/ld-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbdb5 (0x25db5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef67fbdd8 (0x25dd8), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a64 (0xaa64), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714cba0 (0xf1ba0), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbf33 (0x25f33), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c335 (0xf1335), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7dc2350 (0x13350), load module = /lib/x86_64-linux-gnu/ld-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbdb5 (0x25db5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7b6f8c2 (0x168c2), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944ae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7b6f8c2 (0x168c2), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944ae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef67ee202 (0x18202), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbf98 (0x25f98), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c330 (0xf1330), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7b77602 (0x1e602), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7b7df88 (0x24f88), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67ee529 (0x18529), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbf98 (0x25f98), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a64 (0xaa64), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef67ee210 (0x18210), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbf98 (0x25f98), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef67fbf03 (0x25f03), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7b6f969 (0x16969), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944ae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7b6f969 (0x16969), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944ae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef67ee498 (0x18498), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbf98 (0x25f98), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7dc2350 (0x13350), load module = /lib/x86_64-linux-gnu/ld-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7b6f8df (0x168df), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944ae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7dc2350 (0x13350), load module = /lib/x86_64-linux-gnu/ld-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7b6f8df (0x168df), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944ae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef67fbdd8 (0x25dd8), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7dc2340 (0x13340), load module = /lib/x86_64-linux-gnu/ld-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7b7df5d (0x24f5d), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67ee529 (0x18529), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbf98 (0x25f98), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbfab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a64 (0xaa64), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a64 (0xaa64), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef67ee1e1 (0x181e1), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbf98 (0x25f98), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef67fbee5 (0x25ee5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7dc2340 (0x13340), load module = /lib/x86_64-linux-gnu/ld-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbdb5 (0x25db5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef714c337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7dc2340 (0x13340), load module = /lib/x86_64-linux-gnu/ld-2.19.so | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef67fbdb5 (0x25db5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7944bb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+[22502, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22502, N]: NULL (0): ip = 0x7f6ef7944a30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22502, N]: NULL (0): ip = 0x7f6ef7091d40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22502, N]: -- end backtrace ------------------------------------
+
+MEMORY: segment size: 4.0 meg, num segments: 1, total allocation: 4.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 0.0 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 140 (async: 140, dlopen: 0), errors: 161 (segv: 0, soft: 161)
+SUMMARY: samples: 212916 (recorded: 212776, blocked: 140, errant: 161, trolled: 0, yielded: 0),
+         frames: 425241 (trolled: 0)
+         intervals: 337 (suspicious: 0)

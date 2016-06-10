@@ -38,3 +38,43 @@ Block size NB = 8000
 Setup Time  = 0.028624
 Run Time = 82.930015
 
+Initializing for N = 2000
+Block size NB = 128
+Setup Time  = 0.029758
+Run Time = 16.164284
+
+Initializing for N = 2000
+Block size NB = 256
+Setup Time  = 0.018747
+Run Time = 16.699907
+
+Initializing for N = 2000
+Block size NB = 512
+Setup Time  = 0.023071
+Run Time = 42.974346
+
+Initializing for N = 2000
+Block size NB = 32
+Setup Time  = 0.023985
+Run Time = 15.291551
+
+Initializing for N = 2000
+Block size NB = 64
+Setup Time  = 0.014951
+Run Time = 16.480295
+
+Initializing for N = 2000
+Block size NB = 4
+Setup Time  = 0.023472
+Run Time = 22.571672
+
+Initializing for N = 2000
+Block size NB = 8
+Setup Time  = 0.015218
+Run Time = 17.299598
+
+Initializing for N = 2000
+Block size NB = 16
+Setup Time  = 0.015692
+Run Time = 21.324508
+

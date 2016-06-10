@@ -1,0 +1,197 @@
+WARNING: PAPI_L2_TCM using default threshold 2000000, better to use an explicit threshold.
+WARNING: PAPI_L1_TCM using default threshold 2000000, better to use an explicit threshold.
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba64 (0xaa64), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba64 (0xaa64), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a79e602 (0x1e602), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a796914 (0x16914), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a79e602 (0x1e602), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a796914 (0x16914), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a798bd0 (0x18bd0), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a796955 (0x16955), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a798bd0 (0x18bd0), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a796955 (0x16955), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f2319638dd8 (0x25dd8), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bbb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f2319f89337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x7f2319638fab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bbb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f2319f89337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x7f2319638ef5 (0x25ef5), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bbb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56bae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56bae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a796969 (0x16969), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a796969 (0x16969), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/libhpcrun.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bae6 (0xaae6), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f2319f89337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x7f2319638fab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bbb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f2319f89337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x7f2319638fab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bbb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f2319f89337 (0xf1337), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x7f2319638fab (0x25fab), load module = /home/jawa/local/lib/libpapi.so.5.4.3.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f231a56bbb4 (0xabb4), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+[22040, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[22040, N]: NULL (0): ip = 0x7f231a56ba30 (0xaa30), load module = /home/jawa/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[22040, N]: NULL (0): ip = 0x7f2319eced40 (0x36d40), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[22040, N]: NULL (0): ip = 0x400dec (0x400dec), load module = /home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe | lip 
+[22040, N]: -- end backtrace ------------------------------------
+
+MEMORY: segment size: 4.0 meg, num segments: 1, total allocation: 4.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 0.2 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 39 (async: 39, dlopen: 0), errors: 28 (segv: 0, soft: 28)
+SUMMARY: samples: 126666 (recorded: 126627, blocked: 39, errant: 28, trolled: 0, yielded: 0),
+         frames: 507456 (trolled: 0)
+         intervals: 1151 (suspicious: 0)

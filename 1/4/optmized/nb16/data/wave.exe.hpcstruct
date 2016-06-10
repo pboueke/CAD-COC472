@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<!DOCTYPE HPCToolkitStructure [
+<!-- ******************************************************************** -->
+<!-- HPCToolkit Structure DTD                                             -->
+<!-- Version 4.6                                                          -->
+<!-- ******************************************************************** -->
+
+<!ELEMENT HPCToolkitStructure (LM)*>
+<!ATTLIST HPCToolkitStructure
+	version CDATA #REQUIRED
+	i       CDATA #REQUIRED
+	n       CDATA #IMPLIED>
+  <!-- Load module: -->
+  <!--   (i)d: unique identifier for cross referencing -->
+  <!--   (n)ame -->
+  <!--   (l)ine range: "beg-end" (inclusive range) -->
+  <!--   (v)ma-range-set: "{[beg-end), [beg-end)...}" -->
+  <!ELEMENT LM (F|P)*>
+  <!ATTLIST LM
+	i CDATA #REQUIRED
+	n CDATA #REQUIRED
+	v CDATA #IMPLIED>
+  <!-- File: -->
+  <!ELEMENT F (P|L|S)*>
+  <!ATTLIST F
+	i CDATA #REQUIRED
+	n CDATA #REQUIRED>
+  <!-- Procedure: ln=link name (if different than name) -->
+  <!ELEMENT P (P|A|L|S|C)*>
+  <!ATTLIST P
+	i  CDATA #REQUIRED
+	n  CDATA #REQUIRED
+	ln CDATA #IMPLIED
+	l  CDATA #IMPLIED
+	v  CDATA #IMPLIED>
+  <!-- Alien: (f)ilename -->
+  <!ELEMENT A (A|L|S|C)*>
+  <!ATTLIST A
+	i CDATA #REQUIRED
+	f CDATA #IMPLIED
+	n CDATA #IMPLIED
+	ln CDATA #IMPLIED
+	l CDATA #IMPLIED
+	v CDATA #IMPLIED>
+  <!-- Loop -->
+  <!ELEMENT L (A|L|S|C)*>
+  <!ATTLIST L
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	f CDATA #IMPLIED
+	v CDATA #IMPLIED>
+  <!-- Statement -->
+  <!ELEMENT S (S)*>
+  <!ATTLIST S
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	v CDATA #IMPLIED>
+  <!-- Callsite (a special Statement) -->
+  <!ELEMENT C EMPTY>
+  <!ATTLIST C
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	v CDATA #IMPLIED>
+]>
+<HPCToolkitStructure i="0" version="4.6" n="">
+<LM i="2" n="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/wave/wave.exe" v="{}">
+  <F i="27" n="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+    <P i="28" n="Allocate3DMatrix(int, int, int)" ln="_Z16Allocate3DMatrixiii" l="27-39" v="{[0x400a4d-0x400b0f)}">
+      <S i="130" l="28" v="{[0x400a4d-0x400a5f)}"/>
+      <S i="137" l="29" v="{[0x400a5f-0x400a74)}"/>
+      <L i="150" l="30" v="{[0x400af8-0x400af9)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+        <S i="164" l="30" v="{[0x400a74-0x400a7d) [0x400af4-0x400b04)}"/>
+        <S i="151" l="32" v="{[0x400a7d-0x400aa6)}"/>
+        <L i="168" l="33" v="{[0x400aec-0x400aed)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+          <S i="185" l="33" v="{[0x400aa6-0x400aaf) [0x400ae8-0x400af4)}"/>
+          <S i="169" l="34" v="{[0x400aaf-0x400ae8)}"/>
+        </L>
+      </L>
+      <S i="145" l="38" v="{[0x400b04-0x400b08)}"/>
+      <S i="146" l="39" v="{[0x400b08-0x400b0f)}"/>
+    </P>
+    <P i="29" n="Deallocate3DMatrix(float***, Parameters*)" ln="_Z18Deallocate3DMatrixPPPfP10Parameters" l="42-52" v="{[0x400b0f-0x400ba0)}">
+      <S i="189" l="43" v="{[0x400b0f-0x400b1f)}"/>
+      <L i="198" l="44" v="{[0x400b93-0x400b94)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+        <S i="209" l="44" v="{[0x400b1f-0x400b28) [0x400b8f-0x400b9e)}"/>
+        <L i="214" l="46" v="{[0x400b64-0x400b65)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+          <S i="228" l="46" v="{[0x400b28-0x400b31) [0x400b60-0x400b70)}"/>
+          <S i="215" l="47" v="{[0x400b31-0x400b60)}"/>
+        </L>
+        <S i="201" l="49" v="{[0x400b70-0x400b8f)}"/>
+      </L>
+      <S i="196" l="52" v="{[0x400b9e-0x400ba0)}"/>
+    </P>
+    <P i="30" n="initialize(float***, float***, float***, Parameters*)" ln="_Z10initializePPPfS1_S1_P10Parameters" l="57-81" v="{[0x400ba0-0x400dec)}">
+      <S i="233" l="58" v="{[0x400ba0-0x400bb4)}"/>
+      <L i="247" l="59" v="{[0x400cb7-0x400cb8)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+        <S i="250" l="59" v="{[0x400bb4-0x400bc0) [0x400cb3-0x400cc7)}"/>
+        <L i="255" l="60" v="{[0x400ca3-0x400ca4)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+          <S i="258" l="60" v="{[0x400bc0-0x400bcc) [0x400c9f-0x400cb3)}"/>
+          <L i="263" l="61" v="{[0x400c90-0x400c91)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+            <S i="315" l="61" v="{[0x400bcc-0x400bd8) [0x400c8c-0x400c9f)}"/>
+            <S i="264" l="62" v="{[0x400bd8-0x400c14)}"/>
+            <S i="281" l="63" v="{[0x400c14-0x400c50)}"/>
+            <S i="298" l="64" v="{[0x400c50-0x400c8c)}"/>
+          </L>
+        </L>
+      </L>
+      <S i="241" l="70" v="{[0x400cc7-0x400cd0)}"/>
+      <L i="320" l="71" v="{[0x400de0-0x400de1)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+        <S i="334" l="71" v="{[0x400cd0-0x400cdc) [0x400ddc-0x400dea)}"/>
+        <L i="337" l="72" v="{[0x400da6-0x400da7)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+          <S i="347" l="72" v="{[0x400cdc-0x400cf7) [0x400da2-0x400dc6)}"/>
+          <L i="359" l="73" v="{[0x400d82-0x400d83)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+            <S i="369" l="73" v="{[0x400cf7-0x400d0f) [0x400d7e-0x400da2)}"/>
+            <L i="381" l="74" v="{[0x400d63-0x400d64)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+              <S i="399" l="74" v="{[0x400d0f-0x400d26) [0x400d5f-0x400d7e)}"/>
+              <S i="382" l="75" v="{[0x400d26-0x400d5f)}"/>
+            </L>
+          </L>
+        </L>
+        <S i="330" l="79" v="{[0x400dc6-0x400ddc)}"/>
+      </L>
+      <S i="245" l="81" v="{[0x400dea-0x400dec)}"/>
+    </P>
+    <P i="31" n="main" l="84-161" v="{[0x400dec-0x4010b3)}">
+      <S i="411" l="85" v="{[0x400dec-0x400e04)}"/>
+      <S i="416" l="89" v="{[0x400e04-0x400e0b)}"/>
+      <S i="417" l="90" v="{[0x400e0b-0x400e12)}"/>
+      <S i="418" l="91" v="{[0x400e12-0x400e19)}"/>
+      <S i="419" l="92" v="{[0x400e19-0x400e20)}"/>
+      <S i="420" l="95" v="{[0x400e20-0x400e34)}"/>
+      <S i="428" l="114" v="{[0x400e34-0x400e85)}"/>
+      <S i="446" l="120" v="{[0x400e85-0x400ea7)}"/>
+      <L i="574" l="121" v="{[0x400ed6-0x400ed7)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+        <S i="583" l="121" v="{[0x400ea7-0x400eb0) [0x400ed2-0x400edc)}"/>
+        <S i="575" l="122" v="{[0x400eb0-0x400ed2)}"/>
+      </L>
+      <S i="454" l="126" v="{[0x400edc-0x400ef4)}"/>
+      <S i="457" l="129" v="{[0x400ef4-0x400f09)}"/>
+      <S i="464" l="130" v="{[0x400f09-0x400f15)}"/>
+      <S i="467" l="132" v="{[0x400f15-0x400f6b)}"/>
+      <S i="487" l="134" v="{[0x400f6b-0x400f81)}"/>
+      <S i="494" l="135" v="{[0x400f81-0x400f97)}"/>
+      <S i="501" l="136" v="{[0x400f97-0x400fad)}"/>
+      <S i="508" l="138" v="{[0x400fad-0x400fc8)}"/>
+      <S i="517" l="139" v="{[0x400fc8-0x400fe6)}"/>
+      <S i="524" l="140" v="{[0x400fe6-0x400ffa)}"/>
+      <S i="528" l="141" v="{[0x400ffa-0x401004)}"/>
+      <S i="530" l="144" v="{[0x401004-0x40100e)}"/>
+      <S i="532" l="145" v="{[0x40100e-0x401026)}"/>
+      <S i="538" l="148" v="{[0x401026-0x401040)}"/>
+      <S i="544" l="150" v="{[0x401040-0x40104a)}"/>
+      <S i="546" l="152" v="{[0x40104a-0x401069)}"/>
+      <S i="554" l="154" v="{[0x401069-0x401073)}"/>
+      <S i="556" l="156" v="{[0x401073-0x401086)}"/>
+      <S i="561" l="157" v="{[0x401086-0x401099)}"/>
+      <S i="566" l="158" v="{[0x401099-0x4010ac)}"/>
+      <S i="571" l="159" v="{[0x4010ac-0x4010b1)}"/>
+      <S i="572" l="161" v="{[0x4010b1-0x4010b3)}"/>
+    </P>
+    <P i="32" n="run_wave_propagation(float***, float***, float***, float*, Parameters*)" ln="_Z20run_wave_propagationPPPfS1_S1_S_P10Parameters" l="165-183" v="{[0x4010b3-0x401198)}">
+      <S i="586" l="166" v="{[0x4010b3-0x4010cf)}"/>
+      <L i="598" l="170" v="{[0x401186-0x401187)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+        <S i="649" l="170" v="{[0x4010cf-0x4010db) [0x401182-0x401196)}"/>
+        <S i="599" l="172" v="{[0x4010db-0x40110c)}"/>
+        <S i="612" l="175" v="{[0x40110c-0x40113d)}"/>
+        <S i="625" l="178" v="{[0x40113d-0x40116a)}"/>
+        <S i="643" l="179" v="{[0x40116a-0x401182)}"/>
+      </L>
+      <S i="596" l="183" v="{[0x401196-0x401198)}"/>
+    </P>
+    <P i="33" n="iso_3dfd_it(float***, float***, float***, float*, int, int, int)" ln="_Z11iso_3dfd_itPPPfS1_S1_S_iii" l="186-210" v="{[0x401198-0x401660)}">
+      <S i="654" l="187" v="{[0x401198-0x4011b8)}"/>
+      <S i="663" l="188" v="{[0x4011b8-0x4011bf)}"/>
+      <L i="668" l="189" v="{[0x40164f-0x401650)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+        <S i="671" l="189" v="{[0x4011bf-0x4011cb) [0x401649-0x40165e)}"/>
+        <L i="677" l="190" v="{[0x40163a-0x40163b)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+          <S i="680" l="190" v="{[0x4011cb-0x4011d7) [0x401634-0x401649)}"/>
+          <L i="686" l="191" v="{[0x401625-0x401626)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+            <S i="690" l="191" v="{[0x4011d7-0x4011e3) [0x40161f-0x401634)}"/>
+            <L i="696" l="192" v="{[0x4015e8-0x4015e9)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+              <S i="700" l="192" v="{[0x4011e3-0x4011ee) [0x4015e4-0x40161f)}"/>
+              <L i="718" l="193" v="{[0x4015ad-0x4015ae)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+                <S i="722" l="193" v="{[0x4011ee-0x4011f9) [0x4015a9-0x4015e4)}"/>
+                <L i="740" l="194" v="{[0x401572-0x401573)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+                  <S i="836" l="194" v="{[0x4011f9-0x401204) [0x40156e-0x4015a9)}"/>
+                  <S i="741" l="195" v="{[0x401204-0x40120d)}"/>
+                  <S i="743" l="196" v="{[0x40120d-0x40125f)}"/>
+                  <L i="854" l="197" v="{[0x40146d-0x40146e)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+                    <S i="999" l="197" v="{[0x40125f-0x40126b) [0x401469-0x401477)}"/>
+                    <S i="855" l="198" v="{[0x40126b-0x401315)}"/>
+                    <S i="903" l="199" v="{[0x401315-0x4013bf)}"/>
+                    <S i="951" l="200" v="{[0x4013bf-0x401469)}"/>
+                  </L>
+                  <S i="767" l="202" v="{[0x401477-0x401528)}"/>
+                  <S i="817" l="203" v="{[0x401528-0x40156e)}"/>
+                </L>
+              </L>
+            </L>
+          </L>
+        </L>
+      </L>
+      <S i="666" l="210" v="{[0x40165e-0x401660)}"/>
+    </P>
+    <P i="34" n="write_plane_XY(float***, Parameters*, int, char const*)" ln="_Z14write_plane_XYPPPfP10ParametersiPKc" l="213-245" v="{[0x401660-0x4018ec)}">
+      <S i="1002" l="214" v="{[0x401660-0x401695)}"/>
+      <S i="1012" l="216" v="{[0x401695-0x4016b8)}"/>
+      <S i="1019" l="218" v="{[0x4016b8-0x4016ce)}"/>
+      <S i="1026" l="220" v="{[0x4016ce-0x4016e3)}"/>
+      <L i="1107" l="222" v="{[0x40178c-0x40178d)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+        <S i="1110" l="222" v="{[0x4016e3-0x4016ef) [0x401788-0x40179e)}"/>
+        <L i="1115" l="223" v="{[0x401775-0x401776)}" f="/home/jawa/Documents/studies/cad/CAD-COC472/1/4/optmized/wave/main.cc">
+          <S i="1145" l="223" v="{[0x4016ef-0x4016f8) [0x401771-0x401788)}"/>
+          <S i="1116" l="224" v="{[0x4016f8-0x401771)}"/>
+        </L>
+      </L>
+      <S i="1033" l="228" v="{[0x40179e-0x4017aa)}"/>
+      <S i="1036" l="231" v="{[0x4017aa-0x4017cd)}"/>
+      <S i="1043" l="232" v="{[0x4017cd-0x4017e2)}"/>
+      <S i="1048" l="233" v="{[0x4017e2-0x4017fd)}"/>
+      <S i="1054" l="234" v="{[0x4017fd-0x401820)}"/>
+      <S i="1061" l="235" v="{[0x401820-0x40183b)}"/>
+      <S i="1067" l="236" v="{[0x40183b-0x401856)}"/>
+      <S i="1073" l="237" v="{[0x401856-0x401871)}"/>
+      <S i="1079" l="238" v="{[0x401871-0x40188c)}"/>
+      <S i="1085" l="239" v="{[0x40188c-0x4018a7)}"/>
+      <S i="1091" l="240" v="{[0x4018a7-0x4018ca)}"/>
+      <S i="1098" l="241" v="{[0x4018ca-0x4018d6)}"/>
+      <S i="1101" l="245" v="{[0x4018d6-0x4018ec)}"/>
+    </P>
+    <P i="36" n="_GLOBAL__sub_I__Z16Allocate3DMatrixiii" l="245" v="{[0x401929-0x40193e)}">
+      <S i="1168" l="245" v="{[0x401929-0x40193e)}"/>
+    </P>
+    <P i="35" n="__static_initialization_and_destruction_0(int, int)" ln="_Z41__static_initialization_and_destruction_0ii" l="245" v="{[0x4018ec-0x401929)}">
+      <A i="1159" f="/usr/include/c++/4.8/iostream" n="&lt;inline&gt;" l="74" v="{}">
+        <S i="1160" l="74" v="{[0x401909-0x401927)}"/>
+      </A>
+      <S i="1150" l="245" v="{[0x4018ec-0x401909) [0x401927-0x401929)}"/>
+    </P>
+  </F>
+  <F i="37" n="/usr/include/c++/4.8/bits/stl_algobase.h">
+    <P i="38" n="int const&amp; std::min&lt;int&gt;(int const&amp;, int const&amp;)" ln="_ZSt3minIiERKT_S2_S2_" l="193-201" v="{[0x40193e-0x401970)}">
+      <S i="1175" l="193" v="{[0x40193e-0x40194a)}"/>
+      <S i="1179" l="198" v="{[0x40194a-0x40195a)}"/>
+      <S i="1185" l="199" v="{[0x40195a-0x401960)}"/>
+      <S i="1187" l="200" v="{[0x401960-0x401964)}"/>
+      <S i="1188" l="201" v="{[0x401964-0x401966)}"/>
+    </P>
+  </F>
+  <F i="3" n="&lt;unknown file&gt;">
+    <P i="9" n="_ZNSt8ios_base4InitC1Ev@plt" l="0" v="{[0x400890-0x4008a0)}">
+      <S i="53" l="0" v="{[0x400890-0x400896)}"/>
+    </P>
+    <P i="13" n="__cxa_atexit@plt" l="0" v="{[0x4008d0-0x4008e0)}">
+      <S i="57" l="0" v="{[0x4008d0-0x4008d6)}"/>
+    </P>
+    <P i="6" n="__gmon_start__@plt" l="0" v="{[0x400860-0x400870)}">
+      <S i="50" l="0" v="{[0x400860-0x400866)}"/>
+    </P>
+    <P i="40" n="__libc_csu_fini" l="0" v="{[0x4019e0-0x4019e2)}">
+      <S i="1225" l="0" v="{[0x4019e0-0x4019e2)}"/>
+    </P>
+    <P i="39" n="__libc_csu_init" l="0" v="{[0x401970-0x4019e0)}">
+      <L i="1217" l="0" v="{[0x4019b0-0x4019b1)}" f="">
+        <S i="1218" l="0" v="{[0x401970-0x4019d5)}"/>
+      </L>
+    </P>
+    <P i="12" n="__libc_start_main@plt" l="0" v="{[0x4008c0-0x4008d0)}">
+      <S i="56" l="0" v="{[0x4008c0-0x4008c6)}"/>
+    </P>
+    <P i="16" n="__stack_chk_fail@plt" l="0" v="{[0x400910-0x400920)}">
+      <S i="60" l="0" v="{[0x400910-0x400916)}"/>
+    </P>
+    <P i="41" n="_fini" l="0" v="{[0x4019e4-0x4019ed)}">
+      <S i="1226" l="0" v="{[0x4019e4-0x4019ed)}"/>
+    </P>
+    <P i="4" n="_init" l="0" v="{[0x400818-0x400832)}">
+      <S i="42" l="0" v="{[0x400818-0x400832)}"/>
+    </P>
+    <P i="21" n="_start" l="0" v="{[0x400960-0x400990)}">
+      <S i="65" l="0" v="{[0x400960-0x40098a)}"/>
+    </P>
+    <P i="8" n="exit@plt" l="0" v="{[0x400880-0x400890)}">
+      <S i="52" l="0" v="{[0x400880-0x400886)}"/>
+    </P>
+    <P i="17" n="fclose@plt" l="0" v="{[0x400920-0x400930)}">
+      <S i="61" l="0" v="{[0x400920-0x400926)}"/>
+    </P>
+    <P i="20" n="fflush@plt" l="0" v="{[0x400950-0x400960)}">
+      <S i="64" l="0" v="{[0x400950-0x400956)}"/>
+    </P>
+    <P i="11" n="fopen@plt" l="0" v="{[0x4008b0-0x4008c0)}">
+      <S i="55" l="0" v="{[0x4008b0-0x4008b6)}"/>
+    </P>
+    <P i="19" n="fprintf@plt" l="0" v="{[0x400940-0x400950)}">
+      <S i="63" l="0" v="{[0x400940-0x400946)}"/>
+    </P>
+    <P i="14" n="free@plt" l="0" v="{[0x4008f0-0x400900)}">
+      <S i="58" l="0" v="{[0x4008f0-0x4008f6)}"/>
+    </P>
+    <P i="18" n="fwrite@plt" l="0" v="{[0x400930-0x400940)}">
+      <S i="62" l="0" v="{[0x400930-0x400936)}"/>
+    </P>
+    <P i="10" n="malloc@plt" l="0" v="{[0x4008a0-0x4008b0)}">
+      <S i="54" l="0" v="{[0x4008a0-0x4008a6)}"/>
+    </P>
+    <P i="5" n="printf@plt" l="0" v="{[0x400850-0x400860)}">
+      <S i="49" l="0" v="{[0x400850-0x400856)}"/>
+    </P>
+    <P i="7" n="puts@plt" l="0" v="{[0x400870-0x400880)}">
+      <S i="51" l="0" v="{[0x400870-0x400876)}"/>
+    </P>
+    <P i="15" n="sprintf@plt" l="0" v="{[0x400900-0x400910)}">
+      <S i="59" l="0" v="{[0x400900-0x400906)}"/>
+    </P>
+  </F>
+  <F i="22" n="crtstuff.c">
+    <P i="25" n="__do_global_dtors_aux" l="0" v="{[0x400a00-0x400a20)}">
+      <S i="110" l="0" v="{[0x400a00-0x400a1c)}"/>
+    </P>
+    <P i="23" n="deregister_tm_clones" l="0" v="{[0x400990-0x4009c0)}">
+      <S i="77" l="0" v="{[0x400990-0x4009b9)}"/>
+    </P>
+    <P i="26" n="frame_dummy" l="0" v="{[0x400a20-0x400a4d)}">
+      <S i="118" l="0" v="{[0x400a20-0x400a45) [0x400a48-0x400a4d)}"/>
+    </P>
+    <P i="24" n="register_tm_clones" l="0" v="{[0x4009c0-0x400a00)}">
+      <S i="91" l="0" v="{[0x4009c0-0x4009f9)}"/>
+    </P>
+  </F>
+</LM>
+</HPCToolkitStructure>

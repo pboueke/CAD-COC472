@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<!DOCTYPE HPCToolkitStructure [
+<!-- ******************************************************************** -->
+<!-- HPCToolkit Structure DTD                                             -->
+<!-- Version 4.6                                                          -->
+<!-- ******************************************************************** -->
+
+<!ELEMENT HPCToolkitStructure (LM)*>
+<!ATTLIST HPCToolkitStructure
+	version CDATA #REQUIRED
+	i       CDATA #REQUIRED
+	n       CDATA #IMPLIED>
+  <!-- Load module: -->
+  <!--   (i)d: unique identifier for cross referencing -->
+  <!--   (n)ame -->
+  <!--   (l)ine range: "beg-end" (inclusive range) -->
+  <!--   (v)ma-range-set: "{[beg-end), [beg-end)...}" -->
+  <!ELEMENT LM (F|P)*>
+  <!ATTLIST LM
+	i CDATA #REQUIRED
+	n CDATA #REQUIRED
+	v CDATA #IMPLIED>
+  <!-- File: -->
+  <!ELEMENT F (P|L|S)*>
+  <!ATTLIST F
+	i CDATA #REQUIRED
+	n CDATA #REQUIRED>
+  <!-- Procedure: ln=link name (if different than name) -->
+  <!ELEMENT P (P|A|L|S|C)*>
+  <!ATTLIST P
+	i  CDATA #REQUIRED
+	n  CDATA #REQUIRED
+	ln CDATA #IMPLIED
+	l  CDATA #IMPLIED
+	v  CDATA #IMPLIED>
+  <!-- Alien: (f)ilename -->
+  <!ELEMENT A (A|L|S|C)*>
+  <!ATTLIST A
+	i CDATA #REQUIRED
+	f CDATA #IMPLIED
+	n CDATA #IMPLIED
+	ln CDATA #IMPLIED
+	l CDATA #IMPLIED
+	v CDATA #IMPLIED>
+  <!-- Loop -->
+  <!ELEMENT L (A|L|S|C)*>
+  <!ATTLIST L
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	f CDATA #IMPLIED
+	v CDATA #IMPLIED>
+  <!-- Statement -->
+  <!ELEMENT S (S)*>
+  <!ATTLIST S
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	v CDATA #IMPLIED>
+  <!-- Callsite (a special Statement) -->
+  <!ELEMENT C EMPTY>
+  <!ATTLIST C
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	v CDATA #IMPLIED>
+]>
+<HPCToolkitStructure i="0" version="4.6" n="">
+<LM i="2" n="/home/jawa/Documents/studies/cad/CAD-COC472/1/3/bin/matrixIJ_O3" v="{}">
+  <F i="3" n="&lt;unknown file&gt;">
+    <P i="18" n="_Unwind_Resume@plt" l="0" v="{[0x400bf0-0x400c00)}">
+      <S i="53" l="0" v="{[0x400bf0-0x400bf6)}"/>
+    </P>
+    <P i="7" n="_ZNSs4_Rep10_M_disposeERKSaIcE@plt" l="0" v="{[0x400b10-0x400b20)}">
+      <S i="42" l="0" v="{[0x400b10-0x400b16)}"/>
+    </P>
+    <P i="11" n="_ZNSs4_Rep9_S_createEmmRKSaIcE@plt" l="0" v="{[0x400b50-0x400b60)}">
+      <S i="46" l="0" v="{[0x400b50-0x400b56)}"/>
+    </P>
+    <P i="10" n="_ZNSt6chrono3_V212system_clock3nowEv@plt" l="0" v="{[0x400b40-0x400b50)}">
+      <S i="45" l="0" v="{[0x400b40-0x400b46)}"/>
+    </P>
+    <P i="8" n="_ZNSt8ios_base4InitC1Ev@plt" l="0" v="{[0x400b20-0x400b30)}">
+      <S i="43" l="0" v="{[0x400b20-0x400b26)}"/>
+    </P>
+    <P i="15" n="_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt" l="0" v="{[0x400ba0-0x400bb0)}">
+      <S i="50" l="0" v="{[0x400ba0-0x400ba6)}"/>
+    </P>
+    <P i="17" n="_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@plt" l="0" v="{[0x400bd0-0x400be0)}">
+      <S i="52" l="0" v="{[0x400bd0-0x400bd6)}"/>
+    </P>
+    <P i="13" n="_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt" l="0" v="{[0x400b80-0x400b90)}">
+      <S i="48" l="0" v="{[0x400b80-0x400b86)}"/>
+    </P>
+    <P i="6" n="_Znam@plt" l="0" v="{[0x400b00-0x400b10)}">
+      <S i="41" l="0" v="{[0x400b00-0x400b06)}"/>
+    </P>
+    <P i="12" n="__cxa_atexit@plt" l="0" v="{[0x400b60-0x400b70)}">
+      <S i="47" l="0" v="{[0x400b60-0x400b66)}"/>
+    </P>
+    <P i="5" n="__gmon_start__@plt" l="0" v="{[0x400af0-0x400b00)}">
+      <S i="40" l="0" v="{[0x400af0-0x400af6)}"/>
+    </P>
+    <P i="31" n="__libc_csu_fini" l="0" v="{[0x4013a0-0x4013a2)}">
+      <S i="534" l="0" v="{[0x4013a0-0x4013a2)}"/>
+    </P>
+    <P i="30" n="__libc_csu_init" l="0" v="{[0x401330-0x4013a0)}">
+      <L i="526" l="0" v="{[0x401370-0x401371)}" f="">
+        <S i="527" l="0" v="{[0x401330-0x401395)}"/>
+      </L>
+    </P>
+    <P i="9" n="__libc_start_main@plt" l="0" v="{[0x400b30-0x400b40)}">
+      <S i="44" l="0" v="{[0x400b30-0x400b36)}"/>
+    </P>
+    <P i="16" n="__stack_chk_fail@plt" l="0" v="{[0x400bc0-0x400bd0)}">
+      <S i="51" l="0" v="{[0x400bc0-0x400bc6)}"/>
+    </P>
+    <P i="32" n="_fini" l="0" v="{[0x4013a4-0x4013ad)}">
+      <S i="535" l="0" v="{[0x4013a4-0x4013ad)}"/>
+    </P>
+    <P i="4" n="_init" l="0" v="{[0x400ab8-0x400ad2)}">
+      <S i="33" l="0" v="{[0x400ab8-0x400ad2)}"/>
+    </P>
+    <P i="23" n="_start" l="0" v="{[0x4010e6-0x401110)}">
+      <S i="352" l="0" v="{[0x4010e6-0x401110)}"/>
+    </P>
+    <P i="20" n="main" l="0" v="{[0x400c10-0x4010c0)}">
+      <L i="217" l="0" v="{[0x400e5c-0x400e5d)}" f="">
+        <S i="218" l="0" v="{[0x400d3b-0x400d40)}"/>
+        <S i="219" l="0" v="{[0x400d40-0x400d45)}"/>
+        <S i="220" l="0" v="{[0x400d45-0x400d4a)}"/>
+        <S i="221" l="0" v="{[0x400d4a-0x400d4e)}"/>
+        <S i="222" l="0" v="{[0x400d4e-0x400d53)}"/>
+        <S i="223" l="0" v="{[0x400d53-0x400d58)}"/>
+        <S i="224" l="0" v="{[0x400d58-0x400d5c)}"/>
+        <S i="225" l="0" v="{[0x400d5c-0x400d61)}"/>
+        <S i="226" l="0" v="{[0x400d61-0x400d64)}"/>
+        <S i="227" l="0" v="{[0x400d64-0x400d68)}"/>
+        <S i="228" l="0" v="{[0x400d68-0x400d6c)}"/>
+        <S i="229" l="0" v="{[0x400d6c-0x400d70)}"/>
+        <S i="230" l="0" v="{[0x400d70-0x400d74)}"/>
+        <S i="231" l="0" v="{[0x400d74-0x400d77)}"/>
+        <S i="232" l="0" v="{[0x400d77-0x400d7a)}"/>
+        <S i="233" l="0" v="{[0x400d7a-0x400d7e)}"/>
+        <S i="234" l="0" v="{[0x400d7e-0x400d81)}"/>
+        <S i="235" l="0" v="{[0x400d81-0x400d85)}"/>
+        <S i="236" l="0" v="{[0x400d85-0x400d87)}"/>
+        <S i="237" l="0" v="{[0x400d87-0x400d8a)}"/>
+        <S i="238" l="0" v="{[0x400d8a-0x400d8e)}"/>
+        <S i="239" l="0" v="{[0x400d8e-0x400d90)}"/>
+        <S i="240" l="0" v="{[0x400d90-0x400d93)}"/>
+        <S i="241" l="0" v="{[0x400d93-0x400d97)}"/>
+        <S i="242" l="0" v="{[0x400d97-0x400d9a)}"/>
+        <S i="243" l="0" v="{[0x400d9a-0x400d9e)}"/>
+        <S i="244" l="0" v="{[0x400d9e-0x400da1)}"/>
+        <S i="245" l="0" v="{[0x400da1-0x400da4)}"/>
+        <S i="246" l="0" v="{[0x400da4-0x400daa)}"/>
+        <S i="247" l="0" v="{[0x400daa-0x400dad)}"/>
+        <S i="248" l="0" v="{[0x400dad-0x400db1)}"/>
+        <S i="249" l="0" v="{[0x400db1-0x400db4)}"/>
+        <S i="250" l="0" v="{[0x400db4-0x400db7)}"/>
+        <S i="251" l="0" v="{[0x400db7-0x400dba)}"/>
+        <S i="252" l="0" v="{[0x400dba-0x400dc0)}"/>
+        <S i="253" l="0" v="{[0x400dc0-0x400dc4)}"/>
+        <S i="254" l="0" v="{[0x400dc4-0x400dc6)}"/>
+        <S i="255" l="0" v="{[0x400dc6-0x400dc8)}"/>
+        <S i="256" l="0" v="{[0x400dc8-0x400dd0)}"/>
+        <S i="257" l="0" v="{[0x400dd0-0x400dd2)}"/>
+        <S i="258" l="0" v="{[0x400dd2-0x400dd4)}"/>
+        <L i="295" l="0" v="{[0x400dd4-0x400dd5)}" f="">
+          <S i="296" l="0" v="{[0x400dd4-0x400dd7)}"/>
+          <S i="297" l="0" v="{[0x400dd7-0x400ddc)}"/>
+          <S i="298" l="0" v="{[0x400ddc-0x400de1)}"/>
+          <S i="299" l="0" v="{[0x400de1-0x400de6)}"/>
+          <S i="300" l="0" v="{[0x400de6-0x400dea)}"/>
+          <S i="301" l="0" v="{[0x400dea-0x400dee)}"/>
+          <S i="302" l="0" v="{[0x400dee-0x400df0)}"/>
+        </L>
+        <S i="259" l="0" v="{[0x400df0-0x400df4)}"/>
+        <S i="260" l="0" v="{[0x400df4-0x400df6)}"/>
+        <S i="261" l="0" v="{[0x400df6-0x400dfa)}"/>
+        <S i="262" l="0" v="{[0x400dfa-0x400e01)}"/>
+        <S i="263" l="0" v="{[0x400e01-0x400e08)}"/>
+        <S i="264" l="0" v="{[0x400e08-0x400e0f)}"/>
+        <S i="265" l="0" v="{[0x400e0f-0x400e11)}"/>
+        <S i="266" l="0" v="{[0x400e11-0x400e15)}"/>
+        <S i="267" l="0" v="{[0x400e15-0x400e1a)}"/>
+        <S i="268" l="0" v="{[0x400e1a-0x400e21)}"/>
+        <S i="269" l="0" v="{[0x400e21-0x400e28)}"/>
+        <S i="270" l="0" v="{[0x400e28-0x400e2f)}"/>
+        <S i="271" l="0" v="{[0x400e2f-0x400e31)}"/>
+        <S i="272" l="0" v="{[0x400e31-0x400e36)}"/>
+        <S i="273" l="0" v="{[0x400e36-0x400e3d)}"/>
+        <S i="274" l="0" v="{[0x400e3d-0x400e44)}"/>
+        <S i="275" l="0" v="{[0x400e44-0x400e4b)}"/>
+        <S i="276" l="0" v="{[0x400e4b-0x400e4f)}"/>
+        <S i="277" l="0" v="{[0x400e4f-0x400e53)}"/>
+        <S i="278" l="0" v="{[0x400e53-0x400e57)}"/>
+        <S i="279" l="0" v="{[0x400e57-0x400e5a)}"/>
+        <S i="280" l="0" v="{[0x400e5a-0x400e5c)}"/>
+        <S i="281" l="0" v="{[0x400e5c-0x400e66)}"/>
+        <S i="282" l="0" v="{[0x400e66-0x400e6b)}"/>
+        <S i="283" l="0" v="{[0x400e6b-0x400e71)}"/>
+        <S i="284" l="0" v="{[0x400e71-0x400e78)}"/>
+        <S i="285" l="0" v="{[0x400e78-0x400e7d)}"/>
+        <S i="286" l="0" v="{[0x400e7d-0x400e84)}"/>
+        <S i="287" l="0" v="{[0x400e84-0x400e88)}"/>
+        <S i="288" l="0" v="{[0x400e88-0x400e8d)}"/>
+        <S i="289" l="0" v="{[0x400e8d-0x400e94)}"/>
+        <S i="290" l="0" v="{[0x400e94-0x400e98)}"/>
+        <S i="291" l="0" v="{[0x400e98-0x400e9d)}"/>
+        <S i="292" l="0" v="{[0x400e9d-0x400e9f)}"/>
+        <S i="293" l="0" v="{[0x400e9f-0x400ea0)}"/>
+        <L i="303" l="0" v="{[0x400ea0-0x400ea1)}" f="">
+          <S i="304" l="0" v="{[0x400ea0-0x400ea7)}"/>
+          <S i="305" l="0" v="{[0x400ea7-0x400eae)}"/>
+          <S i="306" l="0" v="{[0x400eae-0x400eb5)}"/>
+          <S i="307" l="0" v="{[0x400eb5-0x400eb9)}"/>
+          <S i="308" l="0" v="{[0x400eb9-0x400ebb)}"/>
+          <S i="309" l="0" v="{[0x400ebb-0x400ebd)}"/>
+        </L>
+        <S i="294" l="0" v="{[0x400ebd-0x400ebf)}"/>
+      </L>
+      <L i="310" l="0" v="{[0x400ede-0x400edf)}" f="">
+        <L i="318" l="0" v="{[0x400ef0-0x400ef1)}" f="">
+          <L i="325" l="0" v="{[0x400f00-0x400f01)}" f="">
+            <S i="326" l="0" v="{[0x400c10-0x400d3b) [0x400ebf-0x401090)}"/>
+          </L>
+        </L>
+      </L>
+      <L i="334" l="0" v="{[0x401090-0x401091)}" f="">
+        <S i="335" l="0" v="{[0x401090-0x4010b2)}"/>
+      </L>
+    </P>
+    <P i="19" n="memcpy@plt" l="0" v="{[0x400c00-0x400c10)}">
+      <S i="54" l="0" v="{[0x400c00-0x400c06)}"/>
+    </P>
+    <P i="29" n="std::string __gnu_cxx::__to_xstring&lt;std::string, char&gt;(int (*)(char*, unsigned long, char const*, __va_list_tag*), unsigned long, char const*, ...)" ln="_ZN9__gnu_cxx12__to_xstringISscEET_PFiPT0_mPKS2_P13__va_list_tagEmS5_z" l="0" v="{[0x4011d0-0x401330)}">
+      <S i="417" l="0" v="{[0x4011d0-0x4012f2) [0x4012f8-0x401301) [0x401308-0x401327)}"/>
+    </P>
+    <P i="14" n="strtol@plt" l="0" v="{[0x400b90-0x400ba0)}">
+      <S i="49" l="0" v="{[0x400b90-0x400b96)}"/>
+    </P>
+  </F>
+  <F i="24" n="crtstuff.c">
+    <P i="27" n="__do_global_dtors_aux" l="0" v="{[0x401180-0x4011a0)}">
+      <S i="397" l="0" v="{[0x401180-0x40119c)}"/>
+    </P>
+    <P i="25" n="deregister_tm_clones" l="0" v="{[0x401110-0x401140)}">
+      <S i="364" l="0" v="{[0x401110-0x401139)}"/>
+    </P>
+    <P i="28" n="frame_dummy" l="0" v="{[0x4011a0-0x4011d0)}">
+      <S i="405" l="0" v="{[0x4011a0-0x4011c5) [0x4011c8-0x4011cd)}"/>
+    </P>
+    <P i="26" n="register_tm_clones" l="0" v="{[0x401140-0x401180)}">
+      <S i="378" l="0" v="{[0x401140-0x401179)}"/>
+    </P>
+  </F>
+  <F i="21" n="matrixIJ.cpp">
+    <P i="22" n="_GLOBAL__sub_I_main" l="0" v="{[0x4010c0-0x4010e6)}">
+      <S i="344" l="0" v="{[0x4010c0-0x4010e6)}"/>
+    </P>
+  </F>
+</LM>
+</HPCToolkitStructure>

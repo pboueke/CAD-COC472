@@ -2,9 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#include <iostream>
 
 #include "definitions.h"
 
+using namespace std;
 
 typedef struct {
 	int nx;   	        // número de pontos em X
@@ -183,26 +185,28 @@ void run_wave_propagation(float ***ptr_next, float ***ptr_prev, float ***ptr_vel
 
 void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *coeff, const int n1, const int n2, const int n3)
 {
-	for (int k = 0;k< n3; k++) {
-	   for (int j = 0; j<n2; j++) {
-			for (int i = 0; i<n1; i++)
-			{
-
-				if (i >= HALF_LENGTH && i<(n1 - HALF_LENGTH) && j >= HALF_LENGTH && j<(n2 - HALF_LENGTH) && k >= HALF_LENGTH && k<(n3 - HALF_LENGTH))
-				{
-
-					float value = 0.0;
-					value += ptr_prev[i][j][k] * coeff[0];
-					for (int ir = 1; ir <= HALF_LENGTH; ir++) {
-						value += coeff[ir] * (ptr_prev[i+ir][j][k] + ptr_prev[i-ir][j][k]);        // horizontal
-						value += coeff[ir] * (ptr_prev[i][j+ir][k] + ptr_prev[i][j-ir][k]);        // vertical
-						value += coeff[ir] * (ptr_prev[i][j][k+ir] + ptr_prev[i][j][k-ir]); // in front / behind
-					}
-					ptr_next[i][j][k] = 2.0f* ptr_prev[i][j][k] - ptr_next[i][j][k] + value*ptr_vel[i][j][k];
-				}
-			}
-		}
-	}
+  int nb = 8;
+  for (int kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {
+    for (int jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
+      for (int ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
+        for (int k = kk; k < std::min(n3 - HALF_LENGTH, kk + nb); k++){
+          for (int j = jj; j < std::min(n2 - HALF_LENGTH, jj + nb); j++){
+            for (int i = ii; i < std::min(n1 - HALF_LENGTH, ii + nb); i++){
+              float value = 0.0;
+              value += ptr_prev[i][j][k] * coeff[0];
+              for (int ir = 1; ir <= HALF_LENGTH; ir++) {
+                value += coeff[ir] * (ptr_prev[i+ir][j][k] + ptr_prev[i-ir][j][k]);
+                value += coeff[ir] * (ptr_prev[i][j+ir][k] + ptr_prev[i][j-ir][k]);
+                value += coeff[ir] * (ptr_prev[i][j][k+ir] + ptr_prev[i][j][k-ir]);
+              }
+              ptr_next[i][j][k] = 2.0f* ptr_prev[i][j][k] - ptr_next[i][j][k]
+                                + value*ptr_vel[i][j][k];
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
