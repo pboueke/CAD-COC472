@@ -34,9 +34,9 @@ int main(int argc, char *argv[])
 
     high_resolution_clock::time_point t2 = high_resolution_clock::now();
 
-    for (i=0; i < n; i++){ //Loop I
+    for (j=0; j < n; j++){ //Loop I
 
-      for(j=0; j < n;j++){ // Loop J
+      for(i=0; i < n;i++){ // Loop J
 
           for(k=0; k < n; k++){ //Loop K
 
