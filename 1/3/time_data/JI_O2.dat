@@ -1,0 +1,13 @@
+Initializing for N = 1000
+Setup Time  = 0.011594
+Run Time = 8.799223
+
+Initializing for N = 2000
+Setup Time  = 0.021101
+Run Time = 90.612516
+
+Initializing for N = 3000
+Setup Time  = 0.047752
+Run Time = 364.513090
+
+Initializing for N = 4000

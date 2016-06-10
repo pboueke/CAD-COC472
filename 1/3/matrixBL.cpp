@@ -7,22 +7,24 @@ using namespace std::chrono;
 
 int main(int argc, char *argv[])
 {
-  int n, i, j, k, x, y;
+  int n, i, j, k, x, y, jj, ii, kk, nb;
   char* p;
   
   if (argc == 1) 
   {
-    n = 4000;
+    nb = 4000;
   }
   else
   {
-    n = strtol(argv[1], &p, 10);
+    nb = strtol(argv[1], &p, 10);
   }
+  n = 2000;
   int** A = new int*[n];
   int** B = new int*[n];
   int** C = new int*[n];
 
   cout << "Initializing for N = " << to_string(n) << endl;
+  cout << "Block size NB = " << to_string(nb) << endl;
 
   high_resolution_clock::time_point t1 = high_resolution_clock::now();
 
@@ -42,19 +44,20 @@ int main(int argc, char *argv[])
 
     high_resolution_clock::time_point t2 = high_resolution_clock::now();
 
-    for (i=0; i < n; i++){ //Loop I
-
-      for(j=0; j < n;j++){ // Loop J
-
-          for(k=0; k < n; k++){ //Loop K
-
-            C[i][j] = C[i][j] + A[i][k]*B[k][j];
-
+  for(ii = 0; ii < n ; ii += nb){
+    for(jj = 0; jj < n ; jj += nb){
+      for(kk = 0; kk < n; kk += nb){
+        for(i = ii; i < std::min(n, ii + nb); i++){
+          for(j = jj; j < std::min(n, jj + nb); j++){
+            for(k = kk; k < std::min(n, kk +nb); k++) {
+              C[i][j] = C[i][j] + A[j][k] * B[k][i];
+            }
           }
-
+        }
       }
-
+    }
   }
+
 
   high_resolution_clock::time_point t3 = high_resolution_clock::now();
 

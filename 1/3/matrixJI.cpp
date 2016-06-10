@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 
           for(k=0; k < n; k++){ //Loop K
 
-            C[i][j] = A[i][k]*B[k][j];
+            C[i][j] = C[i][j] + A[i][k]*B[k][j];
 
           }
 
