@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<!DOCTYPE HPCToolkitStructure [
+<!-- ******************************************************************** -->
+<!-- HPCToolkit Structure DTD                                             -->
+<!-- Version 4.6                                                          -->
+<!-- ******************************************************************** -->
+
+<!ELEMENT HPCToolkitStructure (LM)*>
+<!ATTLIST HPCToolkitStructure
+	version CDATA #REQUIRED
+	i       CDATA #REQUIRED
+	n       CDATA #IMPLIED>
+  <!-- Load module: -->
+  <!--   (i)d: unique identifier for cross referencing -->
+  <!--   (n)ame -->
+  <!--   (l)ine range: "beg-end" (inclusive range) -->
+  <!--   (v)ma-range-set: "{[beg-end), [beg-end)...}" -->
+  <!ELEMENT LM (F|P)*>
+  <!ATTLIST LM
+	i CDATA #REQUIRED
+	n CDATA #REQUIRED
+	v CDATA #IMPLIED>
+  <!-- File: -->
+  <!ELEMENT F (P|L|S)*>
+  <!ATTLIST F
+	i CDATA #REQUIRED
+	n CDATA #REQUIRED>
+  <!-- Procedure: ln=link name (if different than name) -->
+  <!ELEMENT P (P|A|L|S|C)*>
+  <!ATTLIST P
+	i  CDATA #REQUIRED
+	n  CDATA #REQUIRED
+	ln CDATA #IMPLIED
+	l  CDATA #IMPLIED
+	v  CDATA #IMPLIED>
+  <!-- Alien: (f)ilename -->
+  <!ELEMENT A (A|L|S|C)*>
+  <!ATTLIST A
+	i CDATA #REQUIRED
+	f CDATA #IMPLIED
+	n CDATA #IMPLIED
+	ln CDATA #IMPLIED
+	l CDATA #IMPLIED
+	v CDATA #IMPLIED>
+  <!-- Loop -->
+  <!ELEMENT L (A|L|S|C)*>
+  <!ATTLIST L
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	f CDATA #IMPLIED
+	v CDATA #IMPLIED>
+  <!-- Statement -->
+  <!ELEMENT S (S)*>
+  <!ATTLIST S
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	v CDATA #IMPLIED>
+  <!-- Callsite (a special Statement) -->
+  <!ELEMENT C EMPTY>
+  <!ATTLIST C
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	v CDATA #IMPLIED>
+]>
+<HPCToolkitStructure i="0" version="4.6" n="">
+<LM i="2" n="/home/jawa/Documents/studies/cad/CAD-COC472/1/3/bin/matrixIJ_O" v="{}">
+  <F i="3" n="&lt;unknown file&gt;">
+    <P i="19" n="_Unwind_Resume@plt" l="0" v="{[0x400cc0-0x400cd0)}">
+      <S i="56" l="0" v="{[0x400cc0-0x400cc6)}"/>
+    </P>
+    <P i="7" n="_ZNSs4_Rep10_M_disposeERKSaIcE@plt" l="0" v="{[0x400bd0-0x400be0)}">
+      <S i="44" l="0" v="{[0x400bd0-0x400bd6)}"/>
+    </P>
+    <P i="11" n="_ZNSs4_Rep9_S_createEmmRKSaIcE@plt" l="0" v="{[0x400c10-0x400c20)}">
+      <S i="48" l="0" v="{[0x400c10-0x400c16)}"/>
+    </P>
+    <P i="10" n="_ZNSt6chrono3_V212system_clock3nowEv@plt" l="0" v="{[0x400c00-0x400c10)}">
+      <S i="47" l="0" v="{[0x400c00-0x400c06)}"/>
+    </P>
+    <P i="8" n="_ZNSt8ios_base4InitC1Ev@plt" l="0" v="{[0x400be0-0x400bf0)}">
+      <S i="45" l="0" v="{[0x400be0-0x400be6)}"/>
+    </P>
+    <P i="15" n="_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt" l="0" v="{[0x400c60-0x400c70)}">
+      <S i="52" l="0" v="{[0x400c60-0x400c66)}"/>
+    </P>
+    <P i="17" n="_ZSt19__throw_logic_errorPKc@plt" l="0" v="{[0x400c90-0x400ca0)}">
+      <S i="54" l="0" v="{[0x400c90-0x400c96)}"/>
+    </P>
+    <P i="18" n="_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@plt" l="0" v="{[0x400ca0-0x400cb0)}">
+      <S i="55" l="0" v="{[0x400ca0-0x400ca6)}"/>
+    </P>
+    <P i="13" n="_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt" l="0" v="{[0x400c40-0x400c50)}">
+      <S i="50" l="0" v="{[0x400c40-0x400c46)}"/>
+    </P>
+    <P i="6" n="_Znam@plt" l="0" v="{[0x400bc0-0x400bd0)}">
+      <S i="43" l="0" v="{[0x400bc0-0x400bc6)}"/>
+    </P>
+    <P i="12" n="__cxa_atexit@plt" l="0" v="{[0x400c20-0x400c30)}">
+      <S i="49" l="0" v="{[0x400c20-0x400c26)}"/>
+    </P>
+    <P i="5" n="__gmon_start__@plt" l="0" v="{[0x400bb0-0x400bc0)}">
+      <S i="42" l="0" v="{[0x400bb0-0x400bb6)}"/>
+    </P>
+    <P i="33" n="__libc_csu_fini" l="0" v="{[0x401420-0x401422)}">
+      <S i="519" l="0" v="{[0x401420-0x401422)}"/>
+    </P>
+    <P i="32" n="__libc_csu_init" l="0" v="{[0x4013b0-0x401420)}">
+      <L i="511" l="0" v="{[0x4013f0-0x4013f1)}" f="">
+        <S i="512" l="0" v="{[0x4013b0-0x401415)}"/>
+      </L>
+    </P>
+    <P i="9" n="__libc_start_main@plt" l="0" v="{[0x400bf0-0x400c00)}">
+      <S i="46" l="0" v="{[0x400bf0-0x400bf6)}"/>
+    </P>
+    <P i="16" n="__stack_chk_fail@plt" l="0" v="{[0x400c80-0x400c90)}">
+      <S i="53" l="0" v="{[0x400c80-0x400c86)}"/>
+    </P>
+    <P i="34" n="_fini" l="0" v="{[0x401424-0x40142d)}">
+      <S i="520" l="0" v="{[0x401424-0x40142d)}"/>
+    </P>
+    <P i="4" n="_init" l="0" v="{[0x400b78-0x400b92)}">
+      <S i="35" l="0" v="{[0x400b78-0x400b92)}"/>
+    </P>
+    <P i="21" n="_start" l="0" v="{[0x400ce0-0x400d10)}">
+      <S i="58" l="0" v="{[0x400ce0-0x400d0a)}"/>
+    </P>
+    <P i="27" n="main" l="0" v="{[0x400dcd-0x4011cf)}">
+      <L i="295" l="0" v="{[0x400efa-0x400efb)}" f="">
+        <S i="296" l="0" v="{[0x400efa-0x400f04)}"/>
+        <S i="297" l="0" v="{[0x400f04-0x400f09)}"/>
+        <S i="298" l="0" v="{[0x400f09-0x400f0f)}"/>
+        <S i="299" l="0" v="{[0x400f0f-0x400f14)}"/>
+        <S i="300" l="0" v="{[0x400f14-0x400f17)}"/>
+        <S i="301" l="0" v="{[0x400f17-0x400f1c)}"/>
+        <S i="302" l="0" v="{[0x400f1c-0x400f21)}"/>
+        <S i="303" l="0" v="{[0x400f21-0x400f24)}"/>
+        <S i="304" l="0" v="{[0x400f24-0x400f29)}"/>
+        <S i="305" l="0" v="{[0x400f29-0x400f2c)}"/>
+        <S i="306" l="0" v="{[0x400f2c-0x400f31)}"/>
+        <S i="307" l="0" v="{[0x400f31-0x400f34)}"/>
+        <S i="308" l="0" v="{[0x400f34-0x400f39)}"/>
+        <S i="309" l="0" v="{[0x400f39-0x400f3e)}"/>
+        <S i="310" l="0" v="{[0x400f3e-0x400f43)}"/>
+        <L i="329" l="0" v="{[0x400f43-0x400f44)}" f="">
+          <S i="330" l="0" v="{[0x400f43-0x400f48)}"/>
+          <S i="331" l="0" v="{[0x400f48-0x400f4f)}"/>
+          <S i="332" l="0" v="{[0x400f4f-0x400f53)}"/>
+          <S i="333" l="0" v="{[0x400f53-0x400f5a)}"/>
+          <S i="334" l="0" v="{[0x400f5a-0x400f5e)}"/>
+          <S i="335" l="0" v="{[0x400f5e-0x400f65)}"/>
+          <S i="336" l="0" v="{[0x400f65-0x400f69)}"/>
+          <S i="337" l="0" v="{[0x400f69-0x400f6c)}"/>
+          <S i="338" l="0" v="{[0x400f6c-0x400f6e)}"/>
+        </L>
+        <S i="311" l="0" v="{[0x400f6e-0x400f72)}"/>
+        <S i="312" l="0" v="{[0x400f72-0x400f76)}"/>
+        <S i="313" l="0" v="{[0x400f76-0x400f7c)}"/>
+        <S i="314" l="0" v="{[0x400f7c-0x400f81)}"/>
+        <S i="315" l="0" v="{[0x400f81-0x400f87)}"/>
+        <S i="316" l="0" v="{[0x401159-0x401160)}"/>
+        <S i="317" l="0" v="{[0x401160-0x401165)}"/>
+        <S i="318" l="0" v="{[0x401165-0x40116a)}"/>
+        <S i="319" l="0" v="{[0x40116a-0x40116d)}"/>
+        <S i="320" l="0" v="{[0x40116d-0x401174)}"/>
+        <S i="321" l="0" v="{[0x401174-0x401179)}"/>
+        <S i="322" l="0" v="{[0x401179-0x40117c)}"/>
+        <S i="323" l="0" v="{[0x40117c-0x401181)}"/>
+        <S i="324" l="0" v="{[0x401181-0x401188)}"/>
+        <S i="325" l="0" v="{[0x401188-0x40118d)}"/>
+        <S i="326" l="0" v="{[0x40118d-0x401191)}"/>
+        <S i="327" l="0" v="{[0x401191-0x401196)}"/>
+        <S i="328" l="0" v="{[0x401196-0x40119b)}"/>
+      </L>
+      <L i="339" l="0" v="{[0x400fe2-0x400fe3)}" f="">
+        <L i="345" l="0" v="{[0x400fd2-0x400fd3)}" f="">
+          <L i="351" l="0" v="{[0x400fa5-0x400fa6)}" f="">
+            <S i="352" l="0" v="{[0x400dcd-0x400efa) [0x400f87-0x401159) [0x40119b-0x4011cf)}"/>
+          </L>
+        </L>
+      </L>
+    </P>
+    <P i="20" n="memcpy@plt" l="0" v="{[0x400cd0-0x400ce0)}">
+      <S i="57" l="0" v="{[0x400cd0-0x400cd6)}"/>
+    </P>
+    <P i="30" n="std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string&lt;char*&gt;(char*, char*, std::allocator&lt;char&gt; const&amp;)" ln="_ZNSsC1IPcEET_S1_RKSaIcE" l="0" v="{[0x401200-0x4012bb)}">
+      <S i="371" l="0" v="{[0x401200-0x4012bb)}"/>
+    </P>
+    <P i="31" n="std::string __gnu_cxx::__to_xstring&lt;std::string, char&gt;(int (*)(char*, unsigned long, char const*, __va_list_tag*), unsigned long, char const*, ...)" ln="_ZN9__gnu_cxx12__to_xstringISscEET_PFiPT0_mPKS2_P13__va_list_tagEmS5_z" l="0" v="{[0x4012bb-0x4013b0)}">
+      <S i="430" l="0" v="{[0x4012bb-0x4013a5)}"/>
+    </P>
+    <P i="14" n="strtol@plt" l="0" v="{[0x400c50-0x400c60)}">
+      <S i="51" l="0" v="{[0x400c50-0x400c56)}"/>
+    </P>
+  </F>
+  <F i="22" n="crtstuff.c">
+    <P i="25" n="__do_global_dtors_aux" l="0" v="{[0x400d80-0x400da0)}">
+      <S i="103" l="0" v="{[0x400d80-0x400d9c)}"/>
+    </P>
+    <P i="23" n="deregister_tm_clones" l="0" v="{[0x400d10-0x400d40)}">
+      <S i="70" l="0" v="{[0x400d10-0x400d39)}"/>
+    </P>
+    <P i="26" n="frame_dummy" l="0" v="{[0x400da0-0x400dcd)}">
+      <S i="111" l="0" v="{[0x400da0-0x400dc5) [0x400dc8-0x400dcd)}"/>
+    </P>
+    <P i="24" n="register_tm_clones" l="0" v="{[0x400d40-0x400d80)}">
+      <S i="84" l="0" v="{[0x400d40-0x400d79)}"/>
+    </P>
+  </F>
+  <F i="28" n="matrixIJ.cpp">
+    <P i="29" n="_GLOBAL__sub_I_main" l="0" v="{[0x4011cf-0x401200)}">
+      <S i="362" l="0" v="{[0x4011cf-0x4011f6)}"/>
+    </P>
+  </F>
+</LM>
+</HPCToolkitStructure>

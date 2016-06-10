@@ -1,0 +1,40 @@
+Initializing for N = 2000
+Block size NB = 1000
+Setup Time  = 0.028419
+Run Time = 73.419873
+
+Initializing for N = 2000
+Block size NB = 2000
+Setup Time  = 0.018298
+Run Time = 78.095363
+
+Initializing for N = 2000
+Block size NB = 3000
+Setup Time  = 0.021211
+Run Time = 77.610692
+
+Initializing for N = 2000
+Block size NB = 4000
+Setup Time  = 0.025923
+Run Time = 82.294211
+
+Initializing for N = 2000
+Block size NB = 5000
+Setup Time  = 0.021755
+Run Time = 84.768323
+
+Initializing for N = 2000
+Block size NB = 6000
+Setup Time  = 0.021304
+Run Time = 82.059490
+
+Initializing for N = 2000
+Block size NB = 7000
+Setup Time  = 0.025335
+Run Time = 84.326374
+
+Initializing for N = 2000
+Block size NB = 8000
+Setup Time  = 0.028624
+Run Time = 82.930015
+

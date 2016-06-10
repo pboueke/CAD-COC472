@@ -9,7 +9,7 @@ cd ..
 cd time_data
 for size in "${BLOCKSIZES[@]}"
 do
-(sudo nice --10 ../bin/matrixBL ${size} ; ) >> block.dat
+    (sudo nice --10 ../bin/matrixBL ${size} ; ) >> block.dat
 done
 cd ..
 
