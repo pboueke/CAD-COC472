@@ -9,7 +9,15 @@ int main(int argc, char *argv[])
 {
   int n, i, j, k, x, y;
   char* p;
-  n = strtol(argv[1], &p, 10);
+  
+  if (argc == 1) 
+  {
+    n = 4000;
+  }
+  else
+  {
+    n = strtol(argv[1], &p, 10);
+  }
   int** A = new int*[n];
   int** B = new int*[n];
   int** C = new int*[n];

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SIZES=(10 20 30 40)
+SIZES=(1000 2000 3000 4000)
 FLAGS=(O O2 O3)
 
 mkdir bin

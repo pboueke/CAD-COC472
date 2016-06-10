@@ -9,11 +9,18 @@ int main(int argc, char *argv[])
 {
   int n, i, j, k, x, y;
   char* p;
-  n = strtol(argv[1], &p, 10);
+  
+  if (argc == 1) 
+  {
+    n = 4000;
+  }
+  else
+  {
+    n = strtol(argv[1], &p, 10);
+  }
   int** A = new int*[n];
   int** B = new int*[n];
   int** C = new int*[n];
-
   cout << "Initializing for N = " << to_string(n) << endl;
 
   high_resolution_clock::time_point t1 = high_resolution_clock::now();
@@ -34,9 +41,9 @@ int main(int argc, char *argv[])
 
     high_resolution_clock::time_point t2 = high_resolution_clock::now();
 
-    for (j=0; j < n; j++){ //Loop I
+    for (j=0; j < n; j++){ //Loop J
 
-      for(i=0; i < n;i++){ // Loop J
+      for(i=0; i < n;i++){ // Loop I
 
           for(k=0; k < n; k++){ //Loop K
 
