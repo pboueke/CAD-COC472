@@ -83,6 +83,13 @@ void initialize(float*** prev, float*** next, float*** vel, Parameters* p)
 
 int main(int argc, char** argv)
 {
+        /*//OPENMP SETTINGS
+        int n_threads = 4;
+        int s_chunk = 16;
+        omp_set_num_threads(n_threads);
+        omp_set_dynamic(0);*/
+        omp_set_num_threads(4);
+
 	// Defaults
 	// Malha com 256 x 256 x 256 pontos.
 	Parameters p;
@@ -186,6 +193,8 @@ void run_wave_propagation(float ***ptr_next, float ***ptr_prev, float ***ptr_vel
 void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *coeff, const int n1, const int n2, const int n3)
 {
   int nb = 8;
+  float value;
+  #pragma omp parallel for schedule(static)
   for (int ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
   	for (int jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
   		for (int kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {
