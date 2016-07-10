@@ -194,7 +194,7 @@ void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *
 {
   int nb = 8;
   float value;
-  #pragma omp parallel for schedule(static)
+#pragma omp parallel for schedule(static)
   for (int ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
   	for (int jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
   		for (int kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {

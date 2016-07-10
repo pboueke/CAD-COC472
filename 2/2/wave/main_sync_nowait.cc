@@ -88,7 +88,7 @@ int main(int argc, char** argv)
         int s_chunk = 16;
         omp_set_num_threads(n_threads);
         omp_set_dynamic(0);*/
-        omp_set_num_threads(4);
+        //omp_set_num_threads(4);
 
 	// Defaults
 	// Malha com 256 x 256 x 256 pontos.
@@ -193,15 +193,14 @@ void run_wave_propagation(float ***ptr_next, float ***ptr_prev, float ***ptr_vel
 void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *coeff, const int n1, const int n2, const int n3)
 {
   int nb = 8;
-  int i, ii, j, jj, k, kk;
   float value;
-  #pragma omp parallel for private(i,ii,j,jj,k,kk,nb,value) nowait
-  for (ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
-  	for (jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
-  		for (kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {
-	      for (i = ii; i < std::min(n1 - HALF_LENGTH, ii + nb); i++){
-          for (j = jj; j < std::min(n2 - HALF_LENGTH, jj + nb); j++){
-			      for (k = kk; k < std::min(n3 - HALF_LENGTH, kk + nb); k++){
+#pragma omp parallel for nowait
+  for (int ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
+  	for (int jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
+  		for (int kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {
+	      for (int i = ii; i < std::min(n1 - HALF_LENGTH, ii + nb); i++){
+          for (int j = jj; j < std::min(n2 - HALF_LENGTH, jj + nb); j++){
+			      for (int k = kk; k < std::min(n3 - HALF_LENGTH, kk + nb); k++){
               float value = 0.0;
               value += ptr_prev[i][j][k] * coeff[0];
               for (int ir = 1; ir <= HALF_LENGTH; ir++) {

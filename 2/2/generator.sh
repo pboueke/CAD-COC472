@@ -3,7 +3,7 @@
 RUN_PATH="/home/jawa/local/tau/x86_64/bin"
 
 SCAL=(dynamic guided static)
-SYNC=(nowait)
+SYNC=(exp)
 LOOP=(collapse nocollapse)
 
 export TAU_MAKEFILE=${HOME}/local/tau/x86_64/lib/Makefile.tau-papi-pdt-openmp-opari
@@ -16,15 +16,15 @@ cd bin
 
 for scale in "${SCAL[@]}"
 do
-    $RUN_PATH/tau_cc.sh -openmp -O ../wave/main_scl_${scale}.cc -o wave_scl_${scale}
+    $RUN_PATH/tau_cc.sh -openmp -O ../wave/main_scl_${scale}.cc -o wave_scl_${scale}.exe
 done
 for synch in "${SYNC[@]}"
 do
-    $RUN_PATH/tau_cc.sh -openmp -O ../wave/main_sync_${synch}.cc -o wave_sync_${synch}
+    $RUN_PATH/tau_cc.sh -openmp -O ../wave/main_sync_${synch}.cc -o wave_sync_${synch}.exe
 done
 for lp in "${LOOP[@]}"
 do
-    $RUN_PATH/tau_cc.sh -openmp -O ../wave/main_loop_${lp}.cc -o wave_loop_${lp}
+    $RUN_PATH/tau_cc.sh -openmp -O ../wave/main_loop_${lp}.cc -o wave_loop_${lp}.exe
 done
 
 cd ..
@@ -34,17 +34,17 @@ cd ..
 TIMEFORMAT=%R #get time in seconds
 
 mkdir data
-cd data
+cd bin
 
-for program in ../bin/*
+for program in *.exe
 do
     echo Running \for ${program}...
-    mkdir dir_${file}
-    cd dir_${file}
+    mkdir ../data/dir_${program}
+    cd ../data/dir_${program}
     
-    { time program ; } 2> ${exec}.time.dat
+    { time ../../bin/${program} ; } 2> ${program}.time.dat
     
-    cd ..
+    cd ../../bin
 done
 
 cd ..

@@ -195,7 +195,7 @@ void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *
   int nb = 8;
   int i, ii, j, jj, k, kk;
   float value;
-  #pragma omp parallel for private(i,ii,j,jj,k,kk,nb,value)
+#pragma omp parallel for private(i,ii,j,jj,k,kk,nb,value)
   for (ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
   	for (jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
   		for (kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {
@@ -217,6 +217,7 @@ void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *
       }
     }
   }
+#pragma omp barrier
 }
 
 

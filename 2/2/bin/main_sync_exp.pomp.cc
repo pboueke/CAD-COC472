@@ -1,3 +1,5 @@
+
+#include "main_sync_exp.cc.opari.inc"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -193,14 +195,23 @@ void run_wave_propagation(float ***ptr_next, float ***ptr_prev, float ***ptr_vel
 void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *coeff, const int n1, const int n2, const int n3)
 {
   int nb = 8;
+  int i, ii, j, jj, k, kk;
   float value;
-#pragma omp parallel for schedule(guided)
-  for (int ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
-  	for (int jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
-  		for (int kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {
-	      for (int i = ii; i < std::min(n1 - HALF_LENGTH, ii + nb); i++){
-          for (int j = jj; j < std::min(n2 - HALF_LENGTH, jj + nb); j++){
-			      for (int k = kk; k < std::min(n3 - HALF_LENGTH, kk + nb); k++){
+{
+  int pomp2_num_threads = omp_get_max_threads();
+  int pomp2_if = 1;
+  POMP2_Task_handle pomp2_old_task;
+  POMP2_Parallel_fork(&pomp2_region_1, pomp2_if, pomp2_num_threads, &pomp2_old_task, pomp2_ctc_1 );
+#pragma omp parallel     private(i,ii,j,jj,k,kk,nb,value) POMP2_DLIST_00001 firstprivate(pomp2_old_task) if(pomp2_if) num_threads(pomp2_num_threads)
+{   POMP2_Parallel_begin( &pomp2_region_1 );
+{   POMP2_For_enter( &pomp2_region_1, pomp2_ctc_1  );
+#pragma omp          for                                                    nowait
+  for (ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
+  	for (jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
+  		for (kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {
+	      for (i = ii; i < std::min(n1 - HALF_LENGTH, ii + nb); i++){
+          for (j = jj; j < std::min(n2 - HALF_LENGTH, jj + nb); j++){
+			      for (k = kk; k < std::min(n3 - HALF_LENGTH, kk + nb); k++){
               float value = 0.0;
               value += ptr_prev[i][j][k] * coeff[0];
               for (int ir = 1; ir <= HALF_LENGTH; ir++) {
@@ -216,6 +227,18 @@ void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *
       }
     }
   }
+{ POMP2_Task_handle pomp2_old_task;
+  POMP2_Implicit_barrier_enter( &pomp2_region_1, &pomp2_old_task );
+#pragma omp barrier
+  POMP2_Implicit_barrier_exit( &pomp2_region_1, pomp2_old_task ); }
+  POMP2_For_exit( &pomp2_region_1 );
+ }
+  POMP2_Parallel_end( &pomp2_region_1 ); }
+  POMP2_Parallel_join( &pomp2_region_1, pomp2_old_task ); }
+{ POMP2_Task_handle pomp2_old_task;
+  POMP2_Barrier_enter( &pomp2_region_2, &pomp2_old_task, pomp2_ctc_2  );
+#pragma omp barrier
+  POMP2_Barrier_exit( &pomp2_region_2, pomp2_old_task ); }
 }
 
 
