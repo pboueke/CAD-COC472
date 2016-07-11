@@ -1,3 +1,5 @@
+
+#include "main_loop_nocollapse.cc.opari.inc"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -193,20 +195,26 @@ void run_wave_propagation(float ***ptr_next, float ***ptr_prev, float ***ptr_vel
 void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *coeff, const int n1, const int n2, const int n3)
 {
   int nb = 8;
-  int i, ii, j, jj, k, kk, h=HALF_LENGTH;
+  int i, ii, j, jj, k, kk;
   float value;
-#pragma omp parallel private(ii, jj, kk, i, j, k, value, ir) shared(ptr_next, ptr_prev, coeff, ptr_vel, n1, n2, n3, half, nb)
 {
-#pragma omp for
-  for (ii = h; ii < n1 - h; ii += nb){
-  	for (jj = h; jj < n2 - h; jj += nb) {
-  		for (kk = h; kk < n3 - h; kk += nb) {
-        for (i = ii; i < std::min(n1 - h, ii + nb); i++){
-          for (j = jj; j < std::min(n2 - h, jj + nb); j++){
-		        for (k = kk; k < std::min(n3 - h, kk + nb); k++){
+  int pomp2_num_threads = omp_get_max_threads();
+  int pomp2_if = 1;
+  POMP2_Task_handle pomp2_old_task;
+  POMP2_Parallel_fork(&pomp2_region_1, pomp2_if, pomp2_num_threads, &pomp2_old_task, pomp2_ctc_1 );
+#pragma omp parallel     POMP2_DLIST_00001 firstprivate(pomp2_old_task) if(pomp2_if) num_threads(pomp2_num_threads)
+{   POMP2_Parallel_begin( &pomp2_region_1 );
+{   POMP2_For_enter( &pomp2_region_1, pomp2_ctc_1  );
+#pragma omp          for                   nowait
+  for (ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
+  	for (jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
+  		for (kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {
+	      for (i = ii; i < std::min(n1 - HALF_LENGTH, ii + nb); i++){
+          for (j = jj; j < std::min(n2 - HALF_LENGTH, jj + nb); j++){
+			      for (k = kk; k < std::min(n3 - HALF_LENGTH, kk + nb); k++){
               float value = 0.0;
               value += ptr_prev[i][j][k] * coeff[0];
-              for (int ir = 1; ir <= h; ir++) {
+              for (int ir = 1; ir <= HALF_LENGTH; ir++) {
                 value += coeff[ir] * (ptr_prev[i+ir][j][k] + ptr_prev[i-ir][j][k]);
                 value += coeff[ir] * (ptr_prev[i][j+ir][k] + ptr_prev[i][j-ir][k]);
                 value += coeff[ir] * (ptr_prev[i][j][k+ir] + ptr_prev[i][j][k-ir]);
@@ -219,8 +227,14 @@ void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *
       }
     }
   }
+{ POMP2_Task_handle pomp2_old_task;
+  POMP2_Implicit_barrier_enter( &pomp2_region_1, &pomp2_old_task );
 #pragma omp barrier
-}
+  POMP2_Implicit_barrier_exit( &pomp2_region_1, pomp2_old_task ); }
+  POMP2_For_exit( &pomp2_region_1 );
+ }
+  POMP2_Parallel_end( &pomp2_region_1 ); }
+  POMP2_Parallel_join( &pomp2_region_1, pomp2_old_task ); }
 }
 
 

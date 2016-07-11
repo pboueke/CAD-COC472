@@ -193,20 +193,17 @@ void run_wave_propagation(float ***ptr_next, float ***ptr_prev, float ***ptr_vel
 void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *coeff, const int n1, const int n2, const int n3)
 {
   int nb = 8;
-  int i, ii, j, jj, k, kk, h=HALF_LENGTH;
   float value;
-#pragma omp parallel private(ii, jj, kk, i, j, k, value, ir) shared(ptr_next, ptr_prev, coeff, ptr_vel, n1, n2, n3, half, nb)
-{
-#pragma omp for
-  for (ii = h; ii < n1 - h; ii += nb){
-  	for (jj = h; jj < n2 - h; jj += nb) {
-  		for (kk = h; kk < n3 - h; kk += nb) {
-        for (i = ii; i < std::min(n1 - h, ii + nb); i++){
-          for (j = jj; j < std::min(n2 - h, jj + nb); j++){
-		        for (k = kk; k < std::min(n3 - h, kk + nb); k++){
+#pragma omp parallel for schedule(guided)
+  for (int ii = HALF_LENGTH; ii < n1 - HALF_LENGTH; ii += nb){
+  	for (int jj = HALF_LENGTH; jj < n2 - HALF_LENGTH; jj += nb) {
+  		for (int kk = HALF_LENGTH; kk < n3 - HALF_LENGTH; kk += nb) {
+	      for (int i = ii; i < std::min(n1 - HALF_LENGTH, ii + nb); i++){
+          for (int j = jj; j < std::min(n2 - HALF_LENGTH, jj + nb); j++){
+			      for (int k = kk; k < std::min(n3 - HALF_LENGTH, kk + nb); k++){
               float value = 0.0;
               value += ptr_prev[i][j][k] * coeff[0];
-              for (int ir = 1; ir <= h; ir++) {
+              for (int ir = 1; ir <= HALF_LENGTH; ir++) {
                 value += coeff[ir] * (ptr_prev[i+ir][j][k] + ptr_prev[i-ir][j][k]);
                 value += coeff[ir] * (ptr_prev[i][j+ir][k] + ptr_prev[i][j-ir][k]);
                 value += coeff[ir] * (ptr_prev[i][j][k+ir] + ptr_prev[i][j][k-ir]);
@@ -219,8 +216,6 @@ void iso_3dfd_it(float ***ptr_next, float ***ptr_prev, float ***ptr_vel, float *
       }
     }
   }
-#pragma omp barrier
-}
 }
 
 

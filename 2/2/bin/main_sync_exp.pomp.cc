@@ -90,7 +90,7 @@ int main(int argc, char** argv)
         int s_chunk = 16;
         omp_set_num_threads(n_threads);
         omp_set_dynamic(0);*/
-        omp_set_num_threads(4);
+        //omp_set_num_threads(4);
 
 	// Defaults
 	// Malha com 256 x 256 x 256 pontos.
