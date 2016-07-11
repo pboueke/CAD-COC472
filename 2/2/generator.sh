@@ -7,7 +7,7 @@ SYNC=(exp)
 LOOP=(collapse nocollapse)
 
 export TAU_MAKEFILE=${HOME}/local/tau/x86_64/lib/Makefile.tau-papi-pdt-openmp-opari
-export PATH=$PATH:${HOME}/local/tau/86x_64/bin
+export PATH=$PATH:${HOME}/local/tau/x86_64/bin
 export TAU_OPTIONS=-optRevert
 
 # start compiling

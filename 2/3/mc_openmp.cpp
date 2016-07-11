@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
     double x,y;
     int hit, i;
     
-    cout << "points: " << points << ", threads: " << threads  << endl;
+    //cout << "points: " << points << ", threads: " << threads  << endl;
     
     hit=0;
     
@@ -57,7 +57,8 @@ int main(int argc, char *argv[]){
             } 
         }              
     }
-    cout << "PI:" << 4 * double (hit) / double (points) << endl; 
+    //      "PI:"
+    cout << "" << 4 * double (hit) / double (points) << endl; 
     
     return 0;
 }
