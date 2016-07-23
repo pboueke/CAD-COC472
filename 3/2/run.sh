@@ -3,7 +3,7 @@
 PROC=(2 4 8 16)
 
 #compile
-mpicc blocking_msg.c -o msg
+mpicc helloBsend.c -o msg
 
 #run
 for p in "${PROC[@]}"
