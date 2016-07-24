@@ -3,11 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//A X B = C
-
 int main( int argc, char ** argv){
 
-  int N, N2, world_rank, world_size, i, proccess_N;
+  int N, world_rank, world_size, i, proccess_N;
   //linearized matrices
   int *A, *B, *proccess_A, *proccess_B;
   int globalSum, sum = 0;

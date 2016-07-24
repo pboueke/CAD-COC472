@@ -8,7 +8,6 @@
 int main( int argc, char ** argv){
 
   int N, N2, world_rank, world_size, i, j, k, proccess_N;
-  //linearized matrices
   int *A, *B, *C, *proccess_A, *proccess_B, *proccess_C;
 
   if (argc > 1)
@@ -62,10 +61,10 @@ int main( int argc, char ** argv){
   {
     for (j = 0; j < N; j++)
     {
-      proccess_C[i*N+j] = 0;
+      proccess_C[(i*N) + j] = 0;
       for (k = 0; k < N; k++)
       {
-        proccess_C[i*N+j] += proccess_A[i*N+k]*B[k*N+j];
+        proccess_C[(i*N) + j] += proccess_A[i*N+k]*B[k*N+j];
       }
     }
   }
@@ -87,8 +86,10 @@ int main( int argc, char ** argv){
   // free everything
   free(proccess_A);
   free(proccess_C);
+  
   free(B);
-  if (world_rank == 0){
+  if (world_rank == 0)
+  {
     free(A);
     free(C);
   }
