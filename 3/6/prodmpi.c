@@ -6,7 +6,6 @@
 int main( int argc, char ** argv){
 
   int N, world_rank, world_size, i, proccess_N;
-  //linearized matrices
   int *A, *B, *proccess_A, *proccess_B;
   int globalSum, sum = 0;
 
@@ -32,8 +31,6 @@ int main( int argc, char ** argv){
 
   //hoping for the best (equal number of lines per proccess)
   proccess_N = N/world_size;
-  fprintf(outfile, "\n\nProcess %d initialized\n antes do maloc", world_rank);
-  fflush(outfile);
 
   if (world_rank == 0)
   {
@@ -51,14 +48,14 @@ int main( int argc, char ** argv){
  //receive buffers
   proccess_A = malloc(proccess_N*sizeof(int));
   proccess_B = malloc(proccess_N*sizeof(int));
-  fprintf(outfile, "\n\nProcess %d initialized\n malocado", world_rank);
+  fprintf(outfile, "\n\nProcess array allocated", world_rank);
   fflush(outfile);
 
-  // broadcast B and scatter A
+  // scatter B and scatter A
   MPI_Scatter(A, proccess_N, MPI_INTEGER, proccess_A, proccess_N, MPI_INTEGER, 0, MPI_COMM_WORLD);
   MPI_Scatter(B, proccess_N, MPI_INTEGER, proccess_B, proccess_N, MPI_INTEGER, 0, MPI_COMM_WORLD);
 
-  fprintf(outfile, "\n\nProcess %d primeiros elementos %d %d\n", world_rank, proccess_A[0], proccess_B[0]);
+  fprintf(outfile, "\n\nProcess %d first elements of  local A and  local B %d %d\n", world_rank, proccess_A[0], proccess_B[0]);
   fflush(outfile);
   // calculating
   for (i = 0; i < proccess_N; i++)
