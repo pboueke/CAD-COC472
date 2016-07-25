@@ -42,8 +42,10 @@ int main(int argc, char *argv[])
     nj = NJ + 2;
     if (world_rank == world_size -1)
     {
+        // last process takes the remainder lines
         ni = NI - ((world_size-1)*chunk_size) + 2;
     }
+    // adjusted indexes for handling ghost cells
     live_ni = ni - 2;
     live_nj = nj - 2;
 
@@ -56,12 +58,13 @@ int main(int argc, char *argv[])
         new_arr[i] = new int[nj];
     }*/
 
+    // in process allocation of arrays
     old_arr = malloc(ni*sizeof(int*));
     new_arr = malloc(ni*sizeof(int*));
 
     for(i=0; i<ni; i++){
-    old_arr[i] = malloc(nj*sizeof(int));
-    new_arr[i] = malloc(nj*sizeof(int));
+      old_arr[i] = malloc(nj*sizeof(int));
+      new_arr[i] = malloc(nj*sizeof(int));
     }
 
     fprintf(outfile, "Memory allocated \n");
@@ -82,13 +85,14 @@ int main(int argc, char *argv[])
         }
     }
 
+    // calculating neighbors rakns
     next_rank = (world_rank < world_size - 1) ? world_rank + 1 : 0;
     previous_rank = (world_rank > 0) ? world_rank - 1 : world_size - 1;
 
     fprintf(outfile, "Data initialized \n");
     fflush(outfile);
 
-    /* */
+    /* game of life iterations */
     for(n=0; n<NSTEPS; n++)
     {
 
@@ -103,10 +107,10 @@ int main(int argc, char *argv[])
         MPI_Request req[4];
         MPI_Status stat[4];
 
-        //up
+        //up neighbor
         MPI_Isend(old_arr[1], nj, MPI_INT, previous_rank, n, MPI_COMM_WORLD, &req[0]);
         MPI_Irecv(old_arr[0], nj, MPI_INT, previous_rank, n, MPI_COMM_WORLD, &req[1]);
-        //down
+        //down neighbor
         MPI_Isend(old_arr[live_ni], nj, MPI_INT, next_rank, n, MPI_COMM_WORLD, &req[2]);
         MPI_Irecv(old_arr[live_ni + 1], nj, MPI_INT, next_rank, n, MPI_COMM_WORLD, &req[3]);
 
@@ -127,7 +131,7 @@ int main(int argc, char *argv[])
                 jp = j+1;
 
                 nsum =  old_arr[im][jp] + old_arr[i][jp] + old_arr[ip][jp]
-                + old_arr[im][j ]              + old_arr[ip][j ]
+                + old_arr[im][j ] + old_arr[ip][j ]
                 + old_arr[im][jm] + old_arr[i][jm] + old_arr[ip][jm];
 
                 switch(nsum)
@@ -144,7 +148,7 @@ int main(int argc, char *argv[])
             }
         }
 
-        /* wait all the messagesand then calculate the rest */
+        /* wait all the messages and then calculate the rest (that depends on the received data)*/
         MPI_Waitall(4, req, stat);
 
         if (n%100 == 0)
@@ -169,7 +173,7 @@ int main(int argc, char *argv[])
         /* calculating the rest */
         for(i=1; i< live_ni + 1; i += (live_ni - 1))
         {
-            // for i in (1, live_ni)
+            // for i in [1, live_ni]
             for(j=1; j<=nj-1; j++)
             {
                 im = i-1;
@@ -178,7 +182,7 @@ int main(int argc, char *argv[])
                 jp = j+1;
 
                 nsum =  old_arr[im][jp] + old_arr[i][jp] + old_arr[ip][jp]
-                + old_arr[im][j ]              + old_arr[ip][j ]
+                + old_arr[im][j ] + old_arr[ip][j ]
                 + old_arr[im][jm] + old_arr[i][jm] + old_arr[ip][jm];
 
                 switch(nsum)
@@ -222,29 +226,29 @@ int main(int argc, char *argv[])
         }
     }
     printf("Live cells for process [%d]: %d\n", world_rank, isum);
-        fprintf(outfile, "Live cells for process [%d]: %d\n", world_rank, isum);
-            fclose(outfile);
+    fprintf(outfile, "Live cells for process [%d]: %d\n", world_rank, isum);
+    fclose(outfile);
 
-        MPI_Reduce(&isum, &distributed_sum, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+    MPI_Reduce(&isum, &distributed_sum, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
 
-        if (world_rank == 0)
-        {
-            printf("Total live cells: %d\n", distributed_sum);
-        }
-
-        for(i=0; i<ni; i++){
-            //delete old_arr[i];
-            //delete new_arr[i];
-            free(old_arr[i]);
-            free(new_arr[i]);
-        }
-
-        //delete old_arr;
-        //delete new_arr;
-        free(old_arr);
-        free(new_arr);
-
-        MPI_Finalize();
-
-        return 0;
+    if (world_rank == 0)
+    {
+        printf("Total live cells: %d\n", distributed_sum);
     }
+
+    for(i=0; i<ni; i++){
+        //delete old_arr[i];
+        //delete new_arr[i];
+        free(old_arr[i]);
+        free(new_arr[i]);
+    }
+
+    //delete old_arr;
+    //delete new_arr;
+    free(old_arr);
+    free(new_arr);
+
+    MPI_Finalize();
+
+    return 0;
+}
