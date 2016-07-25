@@ -52,7 +52,7 @@ int main( int argc, char ** argv){
   proccess_A = malloc(proccess_N*N*sizeof(int));
   proccess_C = malloc(proccess_N*N*sizeof(int));
 
-  // broadcast B and scatter A
+  // broadcast B and scatter A (ideally we should transpose B and then scatter it)
   MPI_Bcast(B, N2, MPI_INTEGER, 0, MPI_COMM_WORLD);
   MPI_Scatter(A, proccess_N*N, MPI_INTEGER, proccess_A, proccess_N*N, MPI_INTEGER, 0, MPI_COMM_WORLD);
 
